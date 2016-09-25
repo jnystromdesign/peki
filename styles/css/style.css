@@ -1,0 +1,11 @@
+body {
+  color: #999; }
+
+#letter {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  font-size: 25em;
+  text-align: center; }
+  #letter:focus {
+    outline: none; }
