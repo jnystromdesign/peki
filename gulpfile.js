@@ -54,23 +54,23 @@ gulp.task( 'build' , () => {
             'scripts' : 'js/scripts.js',
             'styles'  : 'css/styles.css'
         }) )
-        .pipe( gulp.dest('./build') )
+        .pipe( gulp.dest('./build') );
+    
+    gulp.src('./audio/*')
+        .pipe( gulp.dest('./build/audio') );
 });
 
 gulp.task( 'libs' , () => {
-
-    // --- Scripts --- //
     
+    // --- Scripts --- //
     var lib_scripts = ['./bower_components/jquery/dist/jquery.min.js']; 
 
     gulp.src(lib_scripts)
         .pipe( concatJS( 'libs.js' ) )
         .pipe( gulp.dest('./js/dist/') );
     
-
-    
-    // --- Styles --- //
-    
+ 
+    // --- Styles --- //    
     var lib_stylesheets = ['./bower_components/normalize-css/normalize.css']; 
     gulp.src( lib_stylesheets )
         .pipe( concatCSS('libs.css') )
