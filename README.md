@@ -4,10 +4,19 @@ _Superbasic_ Speak n spell -ish app in html + JS.
 
 ## Installation 
 
-1. Download package as a zip or clone the git repo 
-2. <code>cd</code> into the folder and run <code>npm install and bower install</code>
-3. Run gulp build
-4. <code>cd build && open index.html</code>
+### Regular: I-just-want-to-run-this-localy
+1. cd into <code>/build</code> and open index.html into your favourite browser!
+
+### Aweseom: I-want-to-hack-this-great-thing-or-contribute
+1. Run <code>npm install</code> and <code>bower install</code>
+2. Run <code>gulp</code> and code away! Browser Sync should provide you with a live window.
+
+## Contribution wish list
+- Add voice for numbers (in Swedish)
+- Add more audio for other languages
+
+## Bugs or requests?
+Please add a ticket in the [issue tracker](https://github.com/jnystromdesign/peki/issues)! 
 
 ## Credits 
 
