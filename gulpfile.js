@@ -58,6 +58,9 @@ gulp.task( 'build' , () => {
     
     gulp.src('./audio/*')
         .pipe( gulp.dest('./build/audio') );
+
+    gulp.src('./img/*')
+        .pipe( gulp.dest('./build/img') );
 });
 
 gulp.task( 'libs' , () => {

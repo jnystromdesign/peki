@@ -9,6 +9,18 @@
 	var audioSetup = function audioSetup() {
 		var letters = 'abcdefghijklmnopqrstuvwxyzåäö';
 		letters.split('').map(function (v, i) {
+			switch (v) {
+				case 'å':
+					v = 'aa';
+					break;
+				case 'ä':
+					v = 'ae';
+					break;
+				case 'ö':
+					v = 'oe';
+					break;
+			}
+
 			var audioTag = $('<audio id="audio_' + v + '" src="audio/' + v + '.m4a" preload="auto">Your browser dont support audio. Sry! :(</audio>');
 			audioTag.appendTo('body');
 		});
@@ -129,15 +141,15 @@
 					break;
 				case 'Å':
 					$letter.css({ 'background': 'blue', 'color': 'lightblue' });
-					document.getElementById('audio_å').play();
+					document.getElementById('audio_aa').play();
 					break;
 				case 'Ä':
 					$letter.css({ 'background': 'orange', 'color': 'yellow' });
-					document.getElementById('audio_ä').play();
+					document.getElementById('audio_ae').play();
 					break;
 				case 'Ö':
 					$letter.css({ 'background': 'green', 'color': 'pink' });
-					document.getElementById('audio_ö').play();
+					document.getElementById('audio_oe').play();
 					break;
 
 				default:
