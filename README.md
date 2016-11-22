@@ -12,7 +12,6 @@ _Superbasic_ Speak n spell -ish app in html + JS.
 2. Run <code>gulp</code> and code away! Browser Sync should provide you with a live window.
 
 ## Contribution wish list
-- Add voice for numbers (in Swedish)
 - Add more audio for other languages
 
 ## Bugs or requests?
