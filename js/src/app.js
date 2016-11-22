@@ -6,7 +6,7 @@
 		letterHandler();
 	});
 	var audioSetup = function(){
-		var letters = 'abcdefghijklmnopqrstuvwxyzåäö';
+		var letters = 'abcdefghijklmnopqrstuvwxyzåäö0123456789';
 		letters.split('').map(function(v, i){
 			switch(v){
 				case 'å':
@@ -149,6 +149,47 @@
 				case 'Ö':
 					$letter.css({'background': 'green', 'color': 'pink'});
 					document.getElementById('audio_oe').play();
+				break;
+
+				case '0':
+					$letter.css({'background': 'black', 'color': 'white'});
+					document.getElementById('audio_0').play();
+				break;
+				case '1':
+					$letter.css({'background': 'red', 'color': 'yellow'});
+					document.getElementById('audio_1').play();
+				break;
+				case '2':
+					$letter.css({'background': 'orange', 'color': 'yellow'});
+					document.getElementById('audio_2').play();
+				break;
+				case '3':
+					$letter.css({'background': 'yellow', 'color': 'green'});
+					document.getElementById('audio_3').play();
+				break;
+				case '4':
+					$letter.css({'background': 'lime', 'color': 'yellow'});
+					document.getElementById('audio_4').play();
+				break;
+				case '5':
+					$letter.css({'background': 'lightblue', 'color': 'orange'});
+					document.getElementById('audio_5').play();
+				break;
+				case '6':
+					$letter.css({'background': 'blue', 'color': 'pink'});
+					document.getElementById('audio_6').play();
+				break;
+				case '7':
+					$letter.css({'background': 'purple', 'color': 'yellow'});
+					document.getElementById('audio_7').play();
+				break;
+				case '8':
+					$letter.css({'background': 'red', 'color': 'orange'});
+					document.getElementById('audio_8').play();
+				break;
+				case '9':
+					$letter.css({'background': 'pink', 'color': 'yellow'});
+	 				document.getElementById('audio_9').play();
 				break;
 
 				default: 
